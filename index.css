@@ -23,11 +23,12 @@ body {
 }
 
 .wrraper {
-  width: 90%;
+  min-width: 320px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
 }
 .firstBox {
   font-size: medium;
