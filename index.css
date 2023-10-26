@@ -23,12 +23,18 @@ body {
 }
 
 .wrraper {
-  min-width: 320px;
+  width: 90%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
+}
+
+@media (max-width: 480px) {
+  .thirdBox,
+  .secondBox {
+    min-width: 280px;
+  }
 }
 .firstBox {
   font-size: medium;
@@ -36,6 +42,17 @@ body {
   font-weight: bolder;
   line-height: 1.2;
   letter-spacing: 2px;
+}
+.firstBox h1 {
+  text-align: center;
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+ 
+  .secondBox, .thirdBox {
+    min-width: 390px;
+  }
 }
 
 .secondBox {
@@ -46,7 +63,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 30%;
+  width: 50%;
   background-color: hsl(268, 75%, 9%);
   border-bottom: 2px solid rgba(255, 0, 0, 0.771);
 }
@@ -102,7 +119,7 @@ body {
   border-radius: 9px;
   margin: 1%;
   padding: 2.5%;
-  width: 33%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   user-select: none;
