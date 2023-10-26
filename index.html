@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap");
+    </style>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="wrraper">
+      <div class="firstBox"><h1>Password Generator</h1></div>
+      <div class="secondBox">
+        <input
+          type="text"
+          class="inputPassword"
+          readonly
+          placeholder="Password"
+          password-Data
+        />
+        <span class="CopiedText"></span>
+        <img
+          src="\Mini_Project2\images\images.png"
+          alt="copyImg"
+          height="30px"
+          width="30px" copyBtn  class="cpoyBtnClass"
+        />
+        <!-- <i class="fa-regular fa-copy fa-beat cpoyBtnClass" copyBtn></i> -->
+      </div>
+      <div class="thirdBox">
+        <div class="child1">
+          <span>Password Length</span>
+          <div class="number" numbers></div>
+        </div>
+
+        <input
+          type="range"
+          class="slider"
+          max="20"
+          min="1"
+          step="1"
+          slider-Data
+        />
+
+        <div class="child2">
+          <div class="check">
+            <input type="checkbox" id="uppercase" />
+            <label for="uppercase">Include Uppercase Letters</label>
+          </div>
+          <div class="check">
+            <input type="checkbox" id="lowercase" />
+            <label for="lowercase">Include Lowercase Letters</label>
+          </div>
+          <div class="check">
+            <input type="checkbox" id="numb" />
+            <label for="numb">Include Numbers</label>
+          </div>
+          <div class="check">
+            <input type="checkbox" id="symbol" />
+            <label for="symbol">Include Symbols</label>
+          </div>
+        </div>
+
+        <div class="child3">
+          <p>Strength</p>
+          <div class="colour"></div>
+        </div>
+
+        <div class="child4">
+          <button generateButton>Generate Password</button>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/58a810656e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>
